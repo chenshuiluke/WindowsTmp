@@ -9,7 +9,7 @@ namespace WindowsTmp
             string path = System.IO.Path.Combine("C:\\", "tmp");
             if(System.IO.Directory.Exists(path))
             {
-                System.IO.Directory.Delete(path);
+                System.IO.Directory.Delete(path, true);
             }
             System.IO.Directory.CreateDirectory(path);
         }
